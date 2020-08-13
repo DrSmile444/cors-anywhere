@@ -42,6 +42,8 @@ cors_proxy.createServer({
   setHeaders: {
     'User-Agent': 'Postman',
     'user-agent': 'Postman',
+    'referer': 'https://any.atlassian.net',
+    'origin': 'https://any.atlassian.net',
   },
 }).listen(port, host, function() {
   console.log('Running CORS Anywhere on ' + host + ':' + port);
