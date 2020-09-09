@@ -40,6 +40,7 @@ cors_proxy.createServer({
     xfwd: false,
   },
   setHeaders: {
+    'x-atlassian-token': 'no-check',
     'User-Agent': 'Postman',
     'user-agent': 'Postman',
     'referer': 'https://any.atlassian.net',
